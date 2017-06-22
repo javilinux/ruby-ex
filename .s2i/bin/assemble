@@ -7,6 +7,7 @@ rc=$?
 if [ $rc -eq 0 ]; then
     echo "After successful assembling"
     touch /tmp/success 
+    echo "New change" > /tmp/success
 else
     echo "After failed assembling"
     touch /tmp/fail
